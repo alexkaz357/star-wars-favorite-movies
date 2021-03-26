@@ -1,0 +1,20 @@
+.table-of-content {
+  max-width: 33%;
+  border: 1px solid #ddd;
+
+  .movie-preview {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 50px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+
+    div {
+      margin: 10px 0;
+    }
+
+    p {
+      margin: 5px 0;
+    }
+  }
+}

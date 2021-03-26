@@ -3,6 +3,7 @@ import axios from 'axios'
 export const mainService = {
   getMovies,
   loadMovies,
+  findMovie
 }
 
 async function getMovies() {
@@ -20,6 +21,12 @@ async function loadMovies() {
   if (!movies.length) saveToStorage('movies', await getMovies());
   movies = loadFromStorage('movies');
   return movies;
+}
+
+function findMovie(movieId) {
+  const movies = loadFromStorage('movies');
+  const selectedMovie = movies.find(movie => movie.episode_id === movieId);
+  return selectedMovie;
 }
 
 function saveToStorage(key, val) {
