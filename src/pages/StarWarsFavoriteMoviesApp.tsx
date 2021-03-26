@@ -1,9 +1,22 @@
-import React from 'react'
+import React, { useEffect, useState } from "react";
+import TableOfContent from "../cmps/TableOfContent";
+import { mainService } from "../services/mainService";
 
 export default function StarWarsFavoriteMoviesApp() {
+  const [movies, setMovies] = useState([]);
+
+  useEffect(() => {
+    loadMovies();
+  }, []);
+
+  const loadMovies = () => {
+    const movies = mainService.loadMovies();
+    setMovies(movies);
+  };
+
   return (
     <section>
-      HELLO WORLD
+      <TableOfContent movies={movies} />
     </section>
-  )
+  );
 }
