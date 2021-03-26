@@ -10,8 +10,9 @@ export default function StarWarsFavoriteMoviesApp() {
   }, []);
 
   const loadMovies = () => {
-    const movies = mainService.loadMovies();
-    setMovies(movies);
+    mainService.loadMovies().then((movies) => {
+      setMovies(movies);
+    });
   };
 
   return (
