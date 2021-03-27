@@ -7,4 +7,17 @@
   p {
     margin-bottom: 20px;
   }
+
+  & .fav-btn {
+    background-color: white;
+    border: 1px solid #ddd;
+    text-transform: uppercase;
+    padding: 7px;
+    margin: 10px 0;
+    cursor: pointer;
+
+    &:focus {
+      outline: none;
+    }
+  }
 }

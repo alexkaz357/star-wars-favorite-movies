@@ -1,11 +1,15 @@
 import React, { useEffect, useState } from "react";
+
 import TableOfContent from "../cmps/TableOfContent";
 import MovieDetails from "../cmps/MovieDetails";
+
 import { mainService } from "../services/mainService";
 
+import Movie from "../models/movie";
+
 export default function StarWarsFavoriteMoviesApp() {
-  const [movies, setMovies] = useState([]);
-  const [selectedMovie, setSelectedMovie] = useState(null);
+  const [movies, setMovies] = useState(Array());
+  const [selectedMovie, setSelectedMovie] = useState(Object());
 
   useEffect(() => {
     loadMovies();
@@ -17,9 +21,15 @@ export default function StarWarsFavoriteMoviesApp() {
     });
   };
 
-  const showSelectedMovieDetails = (movieId) => {
-    const selectedMovie = mainService.findMovie(movieId);
+  const showSelectedMovieDetails = (movieId: number) => {
+    const selectedMovie: Movie = mainService.findMovie(movieId);
     setSelectedMovie(selectedMovie);
+  };
+
+  const toggleFavs = (movieId: number) => {
+    mainService.toggleFavs(movieId);
+    showSelectedMovieDetails(movieId);
+    loadMovies();
   };
 
   return (
@@ -28,7 +38,9 @@ export default function StarWarsFavoriteMoviesApp() {
         movies={movies}
         showSelectedMovieDetails={showSelectedMovieDetails}
       />
-      {selectedMovie && <MovieDetails selectedMovie={selectedMovie} />}
+      {Object.keys(selectedMovie).length !== 0 && (
+        <MovieDetails selectedMovie={selectedMovie} toggleFavs={toggleFavs} />
+      )}
     </section>
   );
 }
