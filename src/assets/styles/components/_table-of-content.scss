@@ -1,19 +1,22 @@
 .table-of-content {
   max-width: 33%;
-  border: 1px solid #ddd;
+  border: 1px solid rgba($color: #fff, $alpha: 0.25);
+  border-radius: 5px;
+  color: #fff;
+  align-self: flex-start;
 
   .movie-preview {
-    border: 1px solid #ddd;
+    background-color: rgba($color: #fff, $alpha: 0.25);
     padding: 10px;
-    margin: 50px 10px;
+    margin: 30px 20px;
     border-radius: 5px;
     cursor: pointer;
 
-    div {
-      margin: 10px 0;
+    &:hover {
+      background-color: rgba($color: #fff, $alpha: 0.35);
     }
 
-    p {
+    & .title {
       margin: 5px 0;
     }
 
@@ -25,5 +28,12 @@
     .favorite {
       color: #ff414d;
     }
+  }
+}
+
+@media (max-width: 550px) {
+  .table-of-content {
+    max-width: 100%;
+    margin-bottom: 20px;
   }
 }

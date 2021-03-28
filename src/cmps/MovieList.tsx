@@ -4,9 +4,11 @@ import Movie from "../models/movie";
 
 export default function MovieList({
   movies,
+  toggleFavs,
   showSelectedMovieDetails,
 }: {
   movies: Movie[];
+  toggleFavs: Function;
   showSelectedMovieDetails: Function;
 }) {
   return (
@@ -15,6 +17,7 @@ export default function MovieList({
         <MoviePreview
           key={movie.episode_id}
           movie={movie}
+          toggleFavs={toggleFavs}
           showSelectedMovieDetails={showSelectedMovieDetails}
         />
       ))}

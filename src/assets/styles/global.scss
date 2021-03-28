@@ -9,6 +9,10 @@
 @import "basics/helpers.scss";
 @import "basics/layout.scss";
 
+//pages
+@import "./pages/star-wars-movies-app";
+
 // Components
 @import "./components/table-of-content";
 @import "./components/movie-details";
+@import "./components/about";
