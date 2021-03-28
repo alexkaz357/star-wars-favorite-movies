@@ -1,12 +1,13 @@
 import React, { useEffect, useState } from "react";
 
-import TableOfContent from "../cmps/TableOfContent";
-import MovieDetails from "../cmps/MovieDetails";
-
 import { mainService } from "../services/mainService";
 
 import Movie from "../models/movie";
+
+import TableOfContent from "../cmps/TableOfContent";
+import MovieDetails from "../cmps/MovieDetails";
 import About from "../cmps/About";
+import Loader from "../cmps/Loader";
 
 export default function StarWarsFavoriteMoviesApp() {
   const [movies, setMovies] = useState(Array());
@@ -51,11 +52,15 @@ export default function StarWarsFavoriteMoviesApp() {
       </div>
 
       <div className="container content">
-        <TableOfContent
-          movies={movies}
-          toggleFavs={toggleFavs}
-          showSelectedMovieDetails={showSelectedMovieDetails}
-        />
+        {movies.length === 0 ? (
+          <Loader />
+        ) : (
+          <TableOfContent
+            movies={movies}
+            toggleFavs={toggleFavs}
+            showSelectedMovieDetails={showSelectedMovieDetails}
+          />
+        )}
         {Object.keys(selectedMovie).length === 0 ? (
           <About />
         ) : (

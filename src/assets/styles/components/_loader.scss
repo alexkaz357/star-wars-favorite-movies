@@ -1,0 +1,14 @@
+.loader {
+  width: 300px;
+  height: 500px;
+  border: 1px solid rgba($color: #fff, $alpha: 0.25);
+  border-radius: 5px;
+  align-self: flex-start;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  & .loader-img {
+    height: 150px;
+  }
+}
