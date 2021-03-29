@@ -12,3 +12,11 @@
     height: 150px;
   }
 }
+
+
+@media (max-width: 550px) {
+  .loader {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
