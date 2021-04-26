@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/star-wars-favorite-movies/static/css/main.8c4661d5.chunk.css",
+    "main.js": "/star-wars-favorite-movies/static/js/main.501afcd0.chunk.js",
+    "main.js.map": "/star-wars-favorite-movies/static/js/main.501afcd0.chunk.js.map",
+    "runtime-main.js": "/star-wars-favorite-movies/static/js/runtime-main.ce03c27e.js",
+    "runtime-main.js.map": "/star-wars-favorite-movies/static/js/runtime-main.ce03c27e.js.map",
+    "static/js/2.b2e44cfa.chunk.js": "/star-wars-favorite-movies/static/js/2.b2e44cfa.chunk.js",
+    "static/js/2.b2e44cfa.chunk.js.map": "/star-wars-favorite-movies/static/js/2.b2e44cfa.chunk.js.map",
+    "static/js/3.b2f0871e.chunk.js": "/star-wars-favorite-movies/static/js/3.b2f0871e.chunk.js",
+    "static/js/3.b2f0871e.chunk.js.map": "/star-wars-favorite-movies/static/js/3.b2f0871e.chunk.js.map",
+    "index.html": "/star-wars-favorite-movies/index.html",
+    "static/css/main.8c4661d5.chunk.css.map": "/star-wars-favorite-movies/static/css/main.8c4661d5.chunk.css.map",
+    "static/js/2.b2e44cfa.chunk.js.LICENSE.txt": "/star-wars-favorite-movies/static/js/2.b2e44cfa.chunk.js.LICENSE.txt",
+    "static/media/1.jpg": "/star-wars-favorite-movies/static/media/1.737fdd01.jpg",
+    "static/media/2.jpg": "/star-wars-favorite-movies/static/media/2.faf46839.jpg",
+    "static/media/3.jpg": "/star-wars-favorite-movies/static/media/3.683ba6cf.jpg",
+    "static/media/4.jpg": "/star-wars-favorite-movies/static/media/4.44a810bb.jpg",
+    "static/media/5.jpg": "/star-wars-favorite-movies/static/media/5.84ce5ed2.jpg",
+    "static/media/6.jpg": "/star-wars-favorite-movies/static/media/6.9992bbd4.jpg",
+    "static/media/global.scss": "/star-wars-favorite-movies/static/media/stars.90c266f7.png",
+    "static/media/loader.gif": "/star-wars-favorite-movies/static/media/loader.0df1bc38.gif",
+    "static/media/main.jpg": "/star-wars-favorite-movies/static/media/main.fa1c8057.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ce03c27e.js",
+    "static/js/2.b2e44cfa.chunk.js",
+    "static/css/main.8c4661d5.chunk.css",
+    "static/js/main.501afcd0.chunk.js"
+  ]
+}
